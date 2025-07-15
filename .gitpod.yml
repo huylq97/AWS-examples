@@ -29,3 +29,10 @@ tasks:
     init: |
       export DOTNET_ROOT=$HOME/.dotnet
       export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
+  - name: set-aws-env
+      echo 'export AWS_ACCESS_KEY_ID=your-access-key' >> ~/.bashrc
+      echo 'export AWS_SECRET_ACCESS_KEY=your-secret-key' >> ~/.bashrc
+      echo 'export AWS_REGION=us-east-1' >> ~/.bashrc
+      export AWS_ACCESS_KEY_ID=your-access-key
+      export AWS_SECRET_ACCESS_KEY=your-secret-key
+      export AWS_REGION=us-east-1
